@@ -9,17 +9,18 @@ export default function Blog() {
     <div className='blogsContainer'>
       {/* {blogs && JSON.stringify(blogs)} */}
       {blogs && blogs.map((x,i)=> (
-        <div key={i} className="card m-3" style={{width: "16rem"}}>
+        <div key={i} className="card m-2" style={{width: "16rem"}}>
         <div className="card-body">
+          <img src={"https://picsum.photos/300/200?grayscale&blur=2&random="+i+1} alt="" />
           <h5 className="card-title">{x.title}</h5>
           <div className='d-flex justify-content-between'>
-          <h6 className="card-subtitle mb-2 text-muted">{x.author}</h6>
-          <h6 className="card-subtitle mb-2 text-muted">{x.time}</h6>
+          {/* <h6 className="card-subtitle mb-2 text-muted">{x.author}</h6>
+          <h6 className="card-subtitle mb-2 text-muted">{x.time}</h6> */}
 
           </div>
           
-          <p className="card-text pTagInBlogs">{x.body[0].section}</p>
-          <Link to={"/blog/"+x.id} element={ <SingleBlog /> }>Read More</Link>
+          {/* <p className="card-text pTagInBlogs">{x.body[0].section}</p> */}
+          <Link className='blogsLink' to={"/blog/"+x.id} element={ <SingleBlog /> }>More Info</Link>
       
         </div>
       </div>
