@@ -13,13 +13,14 @@ import Solutions from "./components/Solutions/Solutions";
 import Footer from "./components/HeaderAndFooter/Footer";
 import Marketing from "./components/Services/Marketing";
 import Webdev from "./components/Services/Marketing";
+import SingleBlog from "./components/Blog/SingleBlog";
 
 
 function App() {
   return (
     <div className="main">
        <Side/>
-       <div> 
+       <div className="content"> 
         <Header/>
         
         <Routes>
@@ -30,6 +31,7 @@ function App() {
             <Route path="/services/marketing" element={ <Marketing/>}/>
             <Route path="/services/webdevelopment" element={<Webdev/>}/>
             <Route path="/blog" element={ <Blog /> }/>
+            <Route path="/blog/:id" element={ <SingleBlog /> }/>
             <Route path="/career" element={ <Career /> }/>
             <Route path="/contact" element={ <Contact /> }/>
 

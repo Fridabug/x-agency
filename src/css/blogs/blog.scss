@@ -1,0 +1,25 @@
+.blogsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.pTagInBlogs {
+    height: 6rem;
+    overflow: hidden;
+}
+
+.singleBlogContainer {
+    text-align: center;
+    margin: 5rem auto;
+    width: 80%;
+    height: 70vh;
+    overflow: scroll;
+}
+.singleBlogContainer section {
+    margin-bottom: 5rem;
+}
+.singleBlogContainer h5 {
+    margin-bottom: 2rem;
+}
