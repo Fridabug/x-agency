@@ -6,10 +6,10 @@ import SingleBlog from './SingleBlog'
 export default function Blog() {
   const {blogs} = useContext(Context)
   return (
-    <div>
+    <div className='blogsContainer'>
       {/* {blogs && JSON.stringify(blogs)} */}
       {blogs && blogs.map((x,i)=> (
-        <div key={i} className="card" style={{width: "18rem"}}>
+        <div key={i} className="card m-3" style={{width: "16rem"}}>
         <div className="card-body">
           <h5 className="card-title">{x.title}</h5>
           <div className='d-flex justify-content-between'>
