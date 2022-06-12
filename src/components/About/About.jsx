@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function About() {
   return (
@@ -6,5 +6,5 @@ export default function About() {
       <p>I'm a p element</p>
       <a>I'm a link </a>
     </div>
-  )
+  );
 }
