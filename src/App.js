@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="main">
        <Side/>
-       <div> 
+       <div className="content"> 
         <Header/>
         
         <Routes>
