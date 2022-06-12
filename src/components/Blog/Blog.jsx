@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { Context } from '../../context/context'
+import Context from '../../context/context'
 import SingleBlog from './SingleBlog'
 
 export default function Blog() {
@@ -8,7 +8,8 @@ export default function Blog() {
   return (
     <div className='blogsContainer'>
       {/* {blogs && JSON.stringify(blogs)} */}
-      {blogs && blogs.map((x,i)=> (
+      {console.log(blogs)}
+      {blogs.blogs && blogs.blogs.map((x,i)=> (
         <div key={i} className="card m-2" style={{width: "16rem"}}>
         <div className="card-body">
           <img src={"https://picsum.photos/300/200?grayscale&blur=2&random="+i+1} alt="" />

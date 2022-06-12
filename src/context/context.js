@@ -7,6 +7,11 @@ const Context = React.createContext()
 export function ContextProvider({children}){
     const [blogs, setBlogs]=useState([])
 
+    useEffect(()=>{
+        if(blogs.length===0) setBlogs(blogData)
+       
+    },[])
+
 //Contact Component
 
     
@@ -46,7 +51,6 @@ useEffect(() => {
     if(Object.keys(formErrors).length === 0 && submit) {
       console.log(userMessage);
     }
-    if(blogs.length===0) setBlogs(blogData)
   }, [formErrors]);
 
   const handleResubmit = () => {
