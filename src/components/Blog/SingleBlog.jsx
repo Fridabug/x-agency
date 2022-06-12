@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
-import { Context } from '../../context/context'
+import Context from '../../context/context'
 
 export default function SingleBlog() {
     const {id} = useParams()
