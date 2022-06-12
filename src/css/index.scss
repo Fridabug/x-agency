@@ -1,3 +1,8 @@
+@use './HeaderAndFooter/side.scss';
+@use './ColorsAndFonts/colors.scss';
+@use './ColorsAndFonts/fonts.scss';
+@use './blogs/blog.scss';
+
 *{
   margin: 0;
   padding: 0;
@@ -16,4 +21,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main {
+  display: flex;
+
+}
+.content {
+  width: 50%;  
 }

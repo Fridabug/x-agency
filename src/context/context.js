@@ -1,9 +1,11 @@
-import React from 'react'
-import {useState, useEffect} from 'react'
+
+import React, { createContext, useEffect, useState } from 'react';
+import blogData from "./json/blogs.json" 
 
 const Context = React.createContext()
 
-export function ContextProvider(props){
+export function ContextProvider({children}){
+    const [blogs, setBlogs]=useState([])
 
 //Contact Component
 
@@ -44,6 +46,7 @@ useEffect(() => {
     if(Object.keys(formErrors).length === 0 && submit) {
       console.log(userMessage);
     }
+    if(blogs.length===0) setBlogs(blogData)
   }, [formErrors]);
 
   const handleResubmit = () => {
@@ -71,12 +74,14 @@ const selectJobHandler = (e) => {
 
     return (
         <Context.Provider value={{
-            userMessage, setUserMessage, allMessages, setAllMessages, submit, setSubmit, formErrors, setFormErrors, onInputChange, onSubmitMessage, validate, handleResubmit, useEffect,
+            userMessage, setUserMessage, allMessages, setAllMessages, submit, setSubmit, formErrors, setFormErrors, onInputChange, onSubmitMessage, validate, handleResubmit, useEffect, blogs,
 
             jobs, setJobs, job, setJob, selectJobHandler
-        }}>{props.children}
+        }}>{children}
         </Context.Provider>
     )
 }
 
 export default Context;
+
+

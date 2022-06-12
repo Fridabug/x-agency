@@ -1,7 +1,24 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./navbar.css";
 
 export default function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <div className="footer">
+      <ul>
+        <li>
+          <a href="https://instagram.com/">Instagram</a>
+        </li>
+        <li>
+          <a href="https://facebook.com/">Facebook</a>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/career">Career</Link>
+        </li>
+      </ul>
+    </div>
+  );
 }
