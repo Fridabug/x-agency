@@ -6,9 +6,11 @@ body {
   margin: 0;
 }
 
+/* /////Nav Bar///// */
+
 .nav {
-  background-color: black;
-  color: white;
+  background-color: #191919;
+  color: #f7f7f7;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -31,5 +33,29 @@ body {
 }
 
 .nav li:hover {
-  background-color: rgb(101, 112, 147);
+  background-color: #708d81;
+}
+
+/* ///// Footer ///// */
+
+.footer {
+  background-color: #191919;
+  color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+.footer ul li a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+.footer a {
+  padding: 1rem;
 }
