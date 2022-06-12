@@ -50,9 +50,30 @@ useEffect(() => {
     setUserMessage({name: '', email: '', message: ''})
     setSubmit(false);
   }
+
+// Career components
+
+const [jobs, setJobs] = useState([])
+
+useEffect(() => {
+  fetch('https://retoolapi.dev/Rr1PE4/data')
+  .then(res => res.json())
+  .then(data => setJobs(data));
+}, [])
+
+const [job, setJob] = useState({id: null, title: '', company: '', location: '', description: '', date: ''});
+
+const selectJobHandler = (e) => {
+    const selectedJob = jobs.filter((item, index) => item.id == e.target.name);
+    setJob(selectedJob);
+}
+
+
     return (
         <Context.Provider value={{
-            userMessage, setUserMessage, allMessages, setAllMessages, submit, setSubmit, formErrors, setFormErrors, onInputChange, onSubmitMessage, validate, handleResubmit, useEffect
+            userMessage, setUserMessage, allMessages, setAllMessages, submit, setSubmit, formErrors, setFormErrors, onInputChange, onSubmitMessage, validate, handleResubmit, useEffect,
+
+            jobs, setJobs, job, setJob, selectJobHandler
         }}>{props.children}
         </Context.Provider>
     )
