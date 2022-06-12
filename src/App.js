@@ -1,4 +1,5 @@
-import { Routes , Route } from "react-router-dom";
+import { useState } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/HeaderAndFooter/Header";
 import Side from "./components/HeaderAndFooter/Side"
 import Home from "./components/LandingPage/Home";
@@ -14,37 +15,52 @@ import Footer from "./components/HeaderAndFooter/Footer";
 import Marketing from "./components/Services/Marketing";
 import Webdev from "./components/Services/Marketing";
 
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+
 
 function App() {
+  const location = useLocation();
+  const timeout = { enter: 800, exit: 400 };
+
+  const getPathDepth = (location) => {
+    const pathArr = location.pathname.split("/");
+    pathArr = pathArr.filter(n => n !== "");
+    return pathArr.length;
+  }
+ console.log(location)
+
   return (
-    <div className="main">
-       <Side/>
-       <div className="content"> 
-        <Header/>
-        
-        <Routes>
-            <Route path="/" element={ <Home/> }/>
-
-            <Route path="/about" element={ <About /> }/>
-            <Route path="/awards" element={ <Awards /> }/>
-            <Route path="/services/marketing" element={ <Marketing/>}/>
-            <Route path="/services/webdevelopment" element={<Webdev/>}/>
-            <Route path="/blog" element={ <Blog /> }/>
-            <Route path="/career" element={ <Career /> }/>
-            <Route path="/contact" element={ <Contact /> }/>
-
-            <Route path="/industries" element={ <Industries /> }/>
-            <Route path="/insights" element={ <Insights /> }/>
-            <Route path="/solutions" element={ <Solutions /> }/>
+    <TransitionGroup component="div" className="App">
+      <CSSTransition timeout={timeout} className="sideSlider" mountOnEnter={false} unmountOnExit={true}>
+        <div> 
+          <Side/>
+          <div className="content"> 
+            <Header/>
             
-            <Route path="/*" element={ <Home/> }/>
+            <Routes>
+                <Route path="/" element={ <Home/> }/>
 
-        </Routes>
+                <Route path="/about" element={ <About /> }/>
+                <Route path="/awards" element={ <Awards /> }/>
+                <Route path="/services/marketing" element={ <Marketing/>}/>
+                <Route path="/services/webdevelopment" element={<Webdev/>}/>
+                <Route path="/blog" element={ <Blog /> }/>
+                <Route path="/career" element={ <Career /> }/>
+                <Route path="/contact" element={ <Contact /> }/>
 
-        <Footer/>
-       </div>
-       
-    </div>
+                <Route path="/industries" element={ <Industries /> }/>
+                <Route path="/insights" element={ <Insights /> }/>
+                <Route path="/solutions" element={ <Solutions /> }/>
+                
+                <Route path="/*" element={ <Home/> }/>
+
+            </Routes>
+
+            <Footer/>
+          </div>
+        </div>
+       </CSSTransition>
+    </TransitionGroup>
   );
 }
 
