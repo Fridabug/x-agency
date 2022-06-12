@@ -14,7 +14,7 @@ import Footer from "./components/HeaderAndFooter/Footer";
 
 function App() {
   return (
-    <div className='test'>
+    <div>
        <Header/>
   
        <Routes>
