@@ -6,7 +6,7 @@ export default function SingleBlog() {
     const {id} = useParams()
     const {blogs} =useContext(Context)
 
-    const sBlog = blogs[id-1]
+    const sBlog = blogs.blogs[id-1]
   return (
     <div className='singleBlogContainer'>
         <h1>{sBlog.title}</h1>
