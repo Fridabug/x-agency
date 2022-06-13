@@ -1,0 +1,41 @@
+@use '../HeaderAndFooter/side.scss';
+@use "../ColorsAndFonts/colors" as *;
+
+.all-jobs {
+    height: 84.7%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    margin: 0 auto;
+
+    .job-listing {
+        padding: 2rem;
+        border-bottom: 1px solid $dark-color;
+        button {
+           padding: 0.5rem; 
+        }
+        button:hover{
+            background-color: $dark-color;
+            color: $light-color;
+        }
+    }
+}
+
+// single job styling
+
+.single-job {
+    margin: 2rem auto;
+    width: 95%;
+    h1{
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color: $dark-color;
+        padding: 2rem 0;
+    }
+    input[type="file"] {
+        margin: 1rem 0;
+    }
+
+}
