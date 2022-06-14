@@ -35,6 +35,11 @@
     border: $light-color solid 2px;
 }
 
+.side a:hover > .circle::before {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: $light-color;
+}
+
 .side p {
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -55,11 +60,12 @@
     margin: 2rem; 
 }
 
-.side p::after{
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    position: relative;
+.circle::before{
+    transition: transform 1s;
+    position: absolute;
     content: '→';
-    line-height: 1.2rem;
+    line-height: 2rem;
     font-size: 3.5rem;
-    padding-left: 1.5rem;
+    text-align: center;
+    top: 25%;
 }
