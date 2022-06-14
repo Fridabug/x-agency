@@ -1,12 +1,15 @@
 import React from 'react'
-import Form from './Form'
+import ContactForm from './ContactForm'
+import {useContext} from 'react'
+import Context from '../../context/context'
 
 export default function Contact() {
 
+  const {submit} = useContext(Context);
+
   return (
-    <div> 
-      <h1>Get in touch!</h1>
-      <Form/>
+    <div className='contact-container'> 
+      <ContactForm/>
     </div>
   )
 }

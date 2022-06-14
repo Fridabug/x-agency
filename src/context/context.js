@@ -80,7 +80,7 @@ const selectJobHandler = (e) => {
         <Context.Provider value={{
             userMessage, setUserMessage, allMessages, setAllMessages, submit, setSubmit, formErrors, setFormErrors, onInputChange, onSubmitMessage, validate, handleResubmit, useEffect, blogs,
 
-            jobs, setJobs, job, setJob, selectJobHandler
+            jobs, setJobs, job, setJob, selectJobHandler, handleResubmit 
         }}>{children}
         </Context.Provider>
     )

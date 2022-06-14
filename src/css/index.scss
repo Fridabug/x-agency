@@ -1,8 +1,11 @@
 @use './HeaderAndFooter/side.scss';
 @use './ColorsAndFonts/colors.scss';
 @use './ColorsAndFonts/fonts.scss';
-@use './blogs/blog';
+@use './blogs/blog.scss';
 @use "./ColorsAndFonts/colors" as *;
+@use './contact/contact.scss';
+@use './career/career.scss';
+
 
 *{
   margin: 0;
