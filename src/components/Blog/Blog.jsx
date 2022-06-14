@@ -8,7 +8,7 @@ export default function Blog() {
   return (
     <div className='blogsContainer'>
       {/* {blogs && JSON.stringify(blogs)} */}
-      {console.log(blogs)}
+      {console.log(blogs.blogs)}
       {blogs.blogs && blogs.blogs.map((x,i)=> (
         <div key={i} className="card m-2" style={{width: "16rem"}}>
         <div className="card-body">
