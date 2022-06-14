@@ -37,8 +37,9 @@
 }
 
 .side a:hover > .circle::before {
-    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform: scaleX(1);
     color: $light-color;
+    left: 20px;
 }
 
 .side p {
@@ -62,11 +63,10 @@
 }
 
 .circle::before{
-    transition: transform 1s;
+    transform: scaleX(2);
+    transition: transform 1s, left 1s;
     position: absolute;
     content: '→';
-    line-height: 2rem;
-    font-size: 3.5rem;
-    text-align: center;
-    top: 25%;
+    font-size: 3.2rem;
+    left: -20px;
 }
