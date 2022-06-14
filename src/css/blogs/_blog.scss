@@ -12,12 +12,12 @@
     border-radius: 10px;
 }
 
-.blogsLink{
+/* .blogsLink{
     color: gray;
 }
 .blogsLink:hover {
     color: black;
-}
+} */
 
 
 .pTagInBlogs {
@@ -37,4 +37,16 @@
 }
 .singleBlogContainer h5 {
     margin-bottom: 2rem;
+    
+}
+
+.outerLink {
+    color: black;
+}
+.outerLink:hover {
+    color: black;
+}
+
+.outerLink:hover .blogsLink {
+    color: gray;
 }
