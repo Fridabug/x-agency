@@ -1,6 +1,23 @@
+@use "../ColorsAndFonts/colors" as *;
+
+.logo-container  {
+    color: $dark-color;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 6rem;
+    height: 6rem;
+    align-items: center;
+    padding: 0 35%;
+}
+
+.logo-container:hover {
+    color: $dark-color;
+}
+
 .logo {
     height: 6rem;
-    background-image: url("https://cdn.dribbble.com/users/60166/screenshots/11468745/media/1b8851064d0542cb5a9ee44444800032.jpg?compress=1&resize=320x240&vertical=top");
+    width: 7rem;
+    background-image: url("./x-agency.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
