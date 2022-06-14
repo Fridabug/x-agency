@@ -32,7 +32,7 @@ function Form() {
          </div>
          <p className='error'>{formErrors.email}</p>
          <div className='inputContainer'>
-           <label htmlFor='message'>Your message</label>
+           <label htmlFor='message'></label>
            <textarea id='message' name='message' placeholder='Say hi!' onChange={onInputChange}></textarea>
          </div>
          <p className='error'>{formErrors.message}</p>

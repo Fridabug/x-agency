@@ -43,3 +43,12 @@ code {
     overflow-y: scroll;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
+  .side {
+    display: none;
+  }
+}
