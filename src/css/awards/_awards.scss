@@ -1,0 +1,19 @@
+.awardsContainer {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    h1 {
+        font-weight: 600;
+    }
+
+    ul {
+        overflow: hidden;
+        list-style-type: none;
+
+        li {
+            margin-bottom: 15px;
+        }
+    }
+}
+
