@@ -9,7 +9,7 @@ const {jobs, setJobs, useEffect, selectJobHandler, job, setJob} = useContext(Con
 
 
   return (
-    <div className='all-jobs'>
+    <div className='all-jobs page-content'>
     {jobs.map((job, index) => 
       <div key={job.id} className='job-listing'>
           <h1>{job.title}</h1>

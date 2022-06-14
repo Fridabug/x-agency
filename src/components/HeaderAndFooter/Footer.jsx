@@ -7,10 +7,10 @@ export default function Footer() {
     <div className="footer">
       <ul>
         <li>
-          <a href="https://instagram.com/">Instagram</a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </li>
         <li>
-          <a href="https://facebook.com/">Facebook</a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
         </li>
         <li>
           <Link to="/contact">Contact</Link>

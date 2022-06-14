@@ -1,0 +1,24 @@
+@use "../ColorsAndFonts/colors" as *;
+
+.logo-container  {
+    color: $dark-color;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 6rem;
+    height: 6rem;
+    align-items: center;
+    padding: 0 35%;
+}
+
+.logo-container:hover {
+    color: $dark-color;
+}
+
+.logo {
+    height: 6rem;
+    width: 7rem;
+    background-image: url("./x-agency.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

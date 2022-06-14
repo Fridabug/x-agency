@@ -8,7 +8,7 @@ export default function Contact() {
   const {submit} = useContext(Context);
 
   return (
-    <div className='contact-container'> 
+    <div className='contact-container page-content'> 
       <ContactForm/>
     </div>
   )

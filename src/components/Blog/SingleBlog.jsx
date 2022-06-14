@@ -8,7 +8,7 @@ export default function SingleBlog() {
 
     const sBlog = blogs.blogs[id-1]
   return (
-    <div className='singleBlogContainer'>
+    <div className='singleBlogContainer page-content'>
         <h1>{sBlog.title}</h1>
 
         <div className='d-flex justify-content-between'>

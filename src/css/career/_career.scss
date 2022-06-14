@@ -2,11 +2,9 @@
 @use "../ColorsAndFonts/colors" as *;
 
 .all-jobs {
-    height: 84.7%;
-    overflow-x: hidden;
-    overflow-y: scroll;
     width: 100%;
     margin: 0 auto;
+    overflow: scroll;
 
     .job-listing {
         padding: 2rem;
