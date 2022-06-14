@@ -1,28 +1,28 @@
-import React, {useState, useEffect, useContext} from 'react'
+import React, {useContext} from 'react'
 import Context from '../../context/context'
 import {Link} from 'react-router-dom'
-import Form from '../Contact/Form'
+import JobForm from '../Career/JobForm'
+import {MdLocationPin, MdBusiness} from 'react-icons/md'
+import {BsArrowLeft} from 'react-icons/bs'
 
 
 function JobCard() {
 
-const {jobs, setJobs, useEffect, job, setJob} = useContext(Context);
+const {job} = useContext(Context);
 
   return ( 
-    <div>
+    <div className='single-job'>
         {job.map((item) => 
             <div key={item.id}>
                 <h1>{item.title}</h1>
-                <p>{item.company}</p>
-                <p>{item.location}</p>
+                <p><MdLocationPin/> {item.company}</p>
+                <p><MdBusiness/> {item.location}</p>
+                <h3>About this job</h3>
                 <p>{item.description}</p>
-                <p>Posted at: {item.date}</p>
+                <p>Listed on: {item.date}</p>
             </div>)}
-            <div>
-                <h2>Apply to this job opening here:</h2>
-                <Form/>
-            </div>
-            <Link to='/career'><button>Back to all job openings</button></Link>
+            <JobForm/>
+            <Link to='/career'><BsArrowLeft/> Back to all job openings</Link>
     </div>
   )
 }

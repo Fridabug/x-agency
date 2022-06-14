@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useContext} from 'react'
 import Context from '../../context/context'
 import {Link} from 'react-router-dom'
+import {MdLocationPin, MdBusiness} from 'react-icons/md'
 
 export default function ShowAllOpenings() { 
 
@@ -8,11 +9,11 @@ const {jobs, setJobs, useEffect, selectJobHandler, job, setJob} = useContext(Con
 
 
   return (
-    <div>
+    <div className='all-jobs'>
     {jobs.map((job, index) => 
-      <div key={job.id}>
+      <div key={job.id} className='job-listing'>
           <h1>{job.title}</h1>
-          <p>{job.location}, {job.company}</p>
+          <p><MdLocationPin/> {job.location}, <MdBusiness/> {job.company}</p>
           <p>{job.date}</p>
           <Link to={`/career/${job.title}`}><button name={job.id} onClick={ selectJobHandler}>Read more</button></Link>
       </div>)}
