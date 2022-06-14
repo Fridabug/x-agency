@@ -37,6 +37,7 @@
 }
 .singleBlogContainer h5 {
     margin-bottom: 2rem;
+<<<<<<< HEAD
     
 }
 
@@ -49,4 +50,12 @@
 
 .outerLink:hover .blogsLink {
     color: gray;
+=======
+}
+
+@media screen and (max-width: 768px) {
+    .blogsContainer {
+        justify-content: center;
+    }
+>>>>>>> c19dc70eb3c92bd43cf721317d9d89c915f8d629
 }
