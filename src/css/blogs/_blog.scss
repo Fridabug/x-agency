@@ -38,3 +38,9 @@
 .singleBlogContainer h5 {
     margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+    .blogsContainer {
+        justify-content: center;
+    }
+}
