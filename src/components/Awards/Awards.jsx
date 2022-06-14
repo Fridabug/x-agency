@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Awards() {
   return (
-    <div className='awardsContainer row'>
+    <div className='awardsContainer row page-content'>
       <div className="col-5">
         {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNL96bv2LE-FkA9I1Lm3hnbII517KvDMMRQA&usqp=CAU" alt="aweds" /> */}
         <h1>Your's Value is our Honer</h1>

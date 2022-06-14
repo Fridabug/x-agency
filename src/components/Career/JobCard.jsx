@@ -11,7 +11,7 @@ function JobCard() {
 const {job} = useContext(Context);
 
   return ( 
-    <div className='single-job'>
+    <div className='single-job page-content'>
         {job.map((item) => 
             <div key={item.id}>
                 <h1>{item.title}</h1>

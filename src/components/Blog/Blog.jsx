@@ -6,7 +6,7 @@ import SingleBlog from './SingleBlog'
 export default function Blog() {
   const {blogs} = useContext(Context)
   return (
-    <div className='blogsContainer'>
+    <div className='blogsContainer page-content'>
       {/* {blogs && JSON.stringify(blogs)} */}
       {console.log(blogs.blogs)}
       {blogs.blogs && blogs.blogs.map((x,i)=> (

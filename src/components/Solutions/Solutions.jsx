@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Solutions() {
   return (
-    <div>Solutions</div>
+    <div className='page-content'>Solutions</div>
   )
 }
