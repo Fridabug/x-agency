@@ -6,12 +6,12 @@ export default function Footer() {
   return (
     <div className="footer">
       <ul>
-        <li>
+       {/* <li>
           <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </li>
         <li>
           <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
-        </li>
+        </li>*/}
         <li>
           <Link to="/contact">Contact</Link>
         </li>
