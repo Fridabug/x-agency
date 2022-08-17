@@ -1,0 +1,24 @@
+{
+    "team": [
+        {   "id": 1,
+            "name": "Zhuo",
+            "position": "CEO & Founder",
+            "image": "https://ca.slack-edge.com/T7HTC0C6B-U02KTQYSXQW-b2abf67b395a-512"
+        },
+        {   "id": 2,
+            "name": "Frida",
+            "position": "CEO & Founder",
+            "image": "https://files.slack.com/files-pri/T02KR1XK6VD-F03TVUJ2VD4/eb55039f-e0b6-48ed-baae-de01111465c0_1_105_c.jpeg"
+        },
+        {   "id": 3,
+            "name": "Aurrel",
+            "position": "CEO & Founder",
+            "image": "https://ca.slack-edge.com/T02KR1XK6VD-U02LPELTVFC-eb47bbe1f680-512"
+        },
+        {   "id": 4,
+            "name": "Eszter",
+            "position": "CEO & Founder",
+            "image": "https://ca.slack-edge.com/T02KR1XK6VD-U02LPELTVFC-eb47bbe1f680-512"
+        }
+    ]
+}
