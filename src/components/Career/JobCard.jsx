@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import Context from '../../context/context'
 import {Link} from 'react-router-dom'
-import JobForm from '../Career/JobForm'
+import JobForm from './JobForm'
 import {MdLocationPin, MdBusiness} from 'react-icons/md'
 import {BsArrowLeft} from 'react-icons/bs'
 
