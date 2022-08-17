@@ -1,0 +1,44 @@
+@use "../ColorsAndFonts/colors" as *;
+
+.page-content h1, .about-text  {
+    text-align: center;
+}
+
+.about-text {
+    margin: 2rem;
+}
+
+.teamContainer {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .team-member:hover {
+        transform: scale(1.1);
+    }
+    .card-title {
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .teamContainer {
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+
+
