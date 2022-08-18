@@ -6,6 +6,7 @@
 @use './contact/contact.scss';
 @use './career/career.scss';
 @use './HeaderAndFooter/header';
+@use './home/home';
 @use './awards/awards.scss';
 @use './about/about.scss';
 
@@ -43,4 +44,10 @@ code {
     overflow-x: hidden;
     overflow-y: scroll;
   }
+}
+
+.dark {
+  background-color: $dark-color;
+  color: $light-color;
+  height: 100%;
 }
